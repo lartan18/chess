@@ -1,0 +1,39 @@
+fix double click necessary when 1: piece clicked 2: not capturable opponents pawn clicked 3: same own piece clicked again
+
+make all legalcapturecoordinates and capture display graphics work like pawns and knights
+
+
+
+
+-------------------old-------------------
+
+- create classes for all pieces
+- define legal moves for all pieces
+- somehow connect the classes to the individual pieces, then use the classes to find legal moves
+- pawns, rooks and kings need to have individual values to check castling and en passant
+- show using dots when piece is selected
+- allow castling when possible
+- make sure king cant castle through check (but rook can!)
+
+implement engine?
+make own engine?
+
+add all draw conditions (decide between 3fold and 5fold repetition, which means store all positions 
+in an array. Also add the 50 move rule)
+
+
+
+
+- define legal moves for all pieces
+* function methods: findLegalMoves, displayLegalMoves, move
+
+- sync movement of sprites with piece.x and piece.y
+- implement capture logic 
+- implement checks
+- implement castling (checks necessary first)
+
+--------------------------
+
+change the system for defining what piece is selected, and add a difference between legal moves and legal captures
+
+MAKE SURE TO RESET LEGALCAPTURES AND LEGALMOVES WHENEVER THEIR VALUES ARE RETURNED AND USED

@@ -1,0 +1,77 @@
+// objectoriented version
+
+const canvas = document.getElementById("canvas")
+const ctx = canvas.getContext("2d")
+canvas.width = 480 * 16
+canvas.height = 480 * 16
+const squareSize = canvas.width / 8
+let whiteToPlay = true
+
+class King {
+    constructor(xPos, yPos, color) {
+        this.xPos = xPos
+        this.yPos = yPos
+        this.color = color
+    }
+}
+
+class Queen {
+    constructor(xPos, yPos, color) {
+        this.xPos = xPos
+        this.yPos = yPos
+        this.color = color
+    }
+}
+
+class Rook {
+    constructor(xPos, yPos, color) {
+        this.xPos = xPos
+        this.yPos = yPos
+        this.color = color
+    }
+}
+
+class Bishop {
+    constructor(xPos, yPos, color) {
+        this.xPos = xPos
+        this.yPos = yPos
+        this.color = color
+    }
+}
+
+class Knight {
+    constructor(xPos, yPos, color) {
+        this.xPos = xPos
+        this.yPos = yPos
+        this.color = color
+    }
+}
+
+class Pawn {
+    constructor(xPos, yPos, color) {
+        this.xPos = xPos
+        this.yPos = yPos
+        this.color = color
+    }
+}
+
+const piecesURL = ["Images/white king.png", "Images/white queen.png", "Images/white rook.png",
+"Images/white bishop.png", "Images/white knight.png", "Images/white pawn.png", 
+"Images/black king.png", "Images/black queen.png", "Images/black rook.png",
+"Images/black bishop.png", "Images/black knight.png", "Images/black pawn.png"
+]
+
+let loadedImages = 0
+
+pieces = []
+
+for (let i = 0; i < piecesURL.length; i++) {
+    pieces[i] = new Image()
+    pieces[i].src = piecesURL[i]
+}
+
+for (let i = 0; i < pieces.length; i++) {
+    pieces[i].addEventListener("load", () => {
+        loadedImages += 1
+    });
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #312b2f;
+    /* background-image: url("Images/meme-elmo.gif");
+    background-size: 100% 100%; */
+}
+
+canvas {
+    max-height: 90vh;
+    width: 600px;
+    height: 600px;
+    border-radius: 3px;
+    opacity: 0.5;
+    transition: 2s ease-in;
+}
+
+canvas:hover {
+    opacity: 1;
+    transition: 0.2s;
+}
