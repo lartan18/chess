@@ -1,3 +1,5 @@
+Link to play: [lartan18.github.io/super-marius](https://lartan18.github.io/super-marius)
+
 A very simple local chess.com clone made using vanilla JS canvas. Lacks some more advanced features. Full feature breakdown:
 Core chess functionality 
 - turn-based play
